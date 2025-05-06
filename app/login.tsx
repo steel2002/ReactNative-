@@ -259,7 +259,7 @@ style={styles.loginButton}
 <View style={styles.dividerLine} />
 </View>
 
-<TouchableOpacity style = {styles.button}>
+<TouchableOpacity style = {styles.socialButton}>
   
 </TouchableOpacity>
 

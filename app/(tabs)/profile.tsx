@@ -26,17 +26,17 @@ export default function ProfileScreen() {
       action: () => console.log('Personal Details'),
     },
     {
-      icon: <Wallet size={20} color="#00AEEF" />,
+      icon: <Wallet size={20} color="#00FF7D" />,
       title: 'My Wallet',
       action: () => console.log('My Wallet'),
     },
     {
-      icon: <Trophy size={20} color="#00AEEF" />,
+      icon: <Trophy size={20} color="#FF0000" />,
       title: 'My Contests',
       action: () => console.log('My Contests'),
     },
     {
-      icon: <Gift size={20} color="#00AEEF" />,
+      icon: <Gift size={20} color="#FFFF00" />,
       title: 'Refer & Earn',
       action: () => console.log('Refer & Earn'),
     },
@@ -71,8 +71,7 @@ export default function ProfileScreen() {
 {/*Render Section */}
 
 {/* profile button and setting button  */}
-  return 
-  (
+  return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Profile</Text>

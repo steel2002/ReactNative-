@@ -39,8 +39,7 @@ export default function ScheduleScreen() {
     },
   ];
 
-  return 
-  (
+  return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Schedule</Text>

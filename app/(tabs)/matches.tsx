@@ -8,40 +8,47 @@ export default function MatchesScreen() {
   const matches = [
     {
       id: 1,
-      team1: { name: 'CSK', logo: 'https://images.pexels.com/photos/9397067/pexels-photo-9397067.jpeg' },
-      team2: { name: 'MI', logo: 'https://images.pexels.com/photos/2570139/pexels-photo-2570139.jpeg' },
+      team1: { name: 'CSK', logo: 'https://wallpapercave.com/wp/wp9765327.jpg' },
+      team2: { name: 'MI', logo: 'https://wallpapercave.com/wp/wp7002104.jpg' },
       time: 'Today, 7:30 PM',
       prize: '₹10 Crore',
       status: 'upcoming',
     },
     {
       id: 2,
-      team1: { name: 'RCB', logo: 'https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg' },
-      team2: { name: 'KKR', logo: 'https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg' },
+      team1: { name: 'RCB', logo: 'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_700,h_400/http://assets.designhill.com/design-blog/wp-content/uploads/2025/03/Untitled-4.jpg' },
+      team2: { name: 'KKR', logo: 'https://wallpapercave.com/wp/wp9880132.jpg' },
       time: 'Tomorrow, 3:30 PM',
       prize: '₹8 Crore',
       status: 'upcoming',
     },
     {
       id: 3,
-      team1: { name: 'DC', logo: 'https://images.pexels.com/photos/186076/pexels-photo-186076.jpeg' },
-      team2: { name: 'SRH', logo: 'https://images.pexels.com/photos/290938/pexels-photo-290938.jpeg' },
+      team1: { name: 'DC', logo: 'https://crazeofsports.com/wp-content/uploads/2024/08/Delhi-Capitals-Team-Logo.webp' },
+      team2: { name: 'SRH', logo: 'https://timesofsports.com/wp-content/uploads/2022/01/SRH-team-logo.png' },
       time: 'Apr 15, 7:30 PM',
       prize: '₹7 Crore',
       status: 'upcoming',
     },
     {
       id: 4,
-      team1: { name: 'PBKS', logo: 'https://images.pexels.com/photos/209841/pexels-photo-209841.jpeg' },
-      team2: { name: 'RR', logo: 'https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg' },
+      team1: { name: 'PBKS', logo: 'https://i.pinimg.com/originals/6a/90/75/6a9075c90746ca7d0f9de928546ef285.jpg' },
+      team2: { name: 'RR', logo: 'https://www.rajasthanroyals.com/static-assets/images/cssimages/static/rr-old.png?v=7.18' },
       time: 'Apr 16, 7:30 PM',
       prize: '₹5 Crore',
       status: 'upcoming',
     },
+    {
+      id:5,
+      team1:{ name: 'GT', logo:'https://timesofsports.com/wp-content/uploads/2022/02/Gujarat-Titans-Logo.png'},
+      team2:{ name: 'LSG', logo:'https://timesofsports.com/wp-content/uploads/2022/01/Lucnow-Supergiants-IPL-Logo.png'},
+      time : 'Apr 17, 7:30 PM',
+      prize: '₹6 Crore',
+      status: 'upcoming',
+    }
   ];
 
-  return 
-  (
+  return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Matches</Text>

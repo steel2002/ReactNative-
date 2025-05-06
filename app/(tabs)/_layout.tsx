@@ -3,15 +3,14 @@ import { Tabs } from 'expo-router';
 import { Chrome as Home, Trophy, Calendar, User } from 'lucide-react-native';
 
 export default function TabLayout() {
-  return 
-  (
-    <Tabs
-      screenOptions={{
-        headerShown: false,
-        tabBarActiveTintColor: '#00AEEF',
-        tabBarInactiveTintColor: '#999999',
-        tabBarLabelStyle: {
-          fontFamily: 'Inter-Medium',
+  return (
+<Tabs
+screenOptions={{
+headerShown: false,
+tabBarActiveTintColor: '#00AEEF',
+tabBarInactiveTintColor: '#999999',
+tabBarLabelStyle: {
+fontFamily: 'Inter-Medium',
           fontSize: 12,
           marginBottom: 4,
         },

@@ -9,12 +9,11 @@ export default function HomeScreen() {
 
  {/* First page */}
 
-  return 
-  (
+  return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <View>
-          <Text style={styles.greeting}>Hi {user?.name || 'User'}!</Text>
+          <Text style={styles.greeting}>Hi {user?.name}!</Text>
           <Text style={styles.welcomeBack}>Welcome to Pro 11</Text>
         </View>
         <TouchableOpacity style={styles.notificationButton}>
@@ -30,15 +29,12 @@ export default function HomeScreen() {
 
         <View style={styles.bannerContainer}>
           <Image
-            source={{ uri: 'https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg' }}
+            source={{ uri: 'https://t3.ftcdn.net/jpg/07/59/76/08/360_F_759760802_gJCPfI0yNBfoQe7XjuUYANw0tqv2uVvY.jpg' }}
             style={styles.bannerImage}
           />
           <View style={styles.bannerOverlay}>
             <Text style={styles.bannerTitle}>IPL 2025</Text>
             <Text style={styles.bannerSubtitle}>Create your fantasy team now!</Text>
-            <TouchableOpacity style={styles.bannerButton}>
-              <Text style={styles.bannerButtonText}>Create Team</Text>
-            </TouchableOpacity>
           </View>
         </View>
 
@@ -54,44 +50,45 @@ export default function HomeScreen() {
 
 {/* up coming matches and list team name price and time set log  */}
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.matchesContainer}
-        >
-          {[1, 2, 3].map((match) => (
-            <TouchableOpacity key={match} style={styles.matchCard}>
-              <View style={styles.teamsContainer}>
-                <View style={styles.teamInfo}>
-                <Image
-    source={{ uri: 'https://images.pexels.com/photos/9397067/pexels-photo-9397067.jpeg' }} // Correct path to your local image
-  style={styles.teamLogo}
-/>
+<ScrollView
+horizontal
+showsHorizontalScrollIndicator={false}
+style={styles.matchesContainer}>
+   {[1,2,3].map((match) => (
+<TouchableOpacity key={match} style={styles.matchCard}>
+<View style={styles.teamsContainer}>
+<View style={styles.teamInfo}>
+<Image source={require("../../assets/images/csk.png")} // Correct path to your local image
+style={styles.teamLogo}/>
   
  <Text style={styles.teamName}>CSK</Text>
-                </View>
-                <Text style={styles.vsText}>VS</Text>
-                <View style={styles.teamInfo}>
-                  <Image
-                    source={{ uri: 'https://images.pexels.com/photos/2570139/pexels-photo-2570139.jpeg' }}
-                    style={styles.teamLogo}
-                  />
-                  <Text style={styles.teamName}>MI</Text>
-                </View>
-              </View>
-              <View style={styles.matchDetails}>
-                <Text style={styles.matchTime}>Today, 7:30 PM</Text>
-                <View style={styles.prizePool}>
-                  <Trophy size={14} color="#E5002B" />
-                  <Text style={styles.prizeText}>₹10 Crore</Text>
-                </View>
-              </View>
-              <TouchableOpacity style={styles.joinButton}>
-                <Text style={styles.joinButtonText}>Join Contest</Text>
-              </TouchableOpacity>
-            </TouchableOpacity>
-          ))}
-        </ScrollView>
+</View>
+<Text style={styles.vsText}>VS</Text>
+<View style={styles.teamInfo}>
+<Image
+source={require("../../assets/images/mi.jpg")}
+style={styles.teamLogo}
+/>
+<Text style={styles.teamName}>MI</Text>
+</View>
+</View>
+<View style={styles.matchDetails}>
+<Text style={styles.matchTime}>Today, 7:30 PM</Text>
+<View style={styles.prizePool}>
+<Trophy size={14} color="#E5002B" />
+<Text style={styles.prizeText}>₹10 Crore</Text>
+</View>
+</View>
+
+<TouchableOpacity style={styles.joinButton}>
+<Text style={styles.joinButtonText}>Join Contest</Text>
+</TouchableOpacity>
+</TouchableOpacity>
+
+ ))}
+</ScrollView>
+
+
 {/* My Contests Section: */}
 
         <View style={styles.sectionHeader}>
@@ -103,7 +100,6 @@ export default function HomeScreen() {
 
         <View style={styles.noContestsContainer}>
           <Text style={styles.noContestsText}>
-            You haven't joined any contests yet. Join a contest to see it here.
           </Text>
         </View>
       </ScrollView>
@@ -233,8 +229,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   teamLogo: {
-    width: 48,
-    height: 48,
+    width: 38,
+    height: 38,
     borderRadius: 24,
     marginBottom: 8,
   },

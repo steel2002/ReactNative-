@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro 11 Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 16px;
+      gap: 20px;
+    }
+    .left, .right {
+      flex: 1;
+    }
+    .welcome {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .subtext {
+      color: gray;
+      margin-bottom: 20px;
+    }
+    .banner {
+      background: url('stadium.jpg') no-repeat center/cover;
+      height: 150px;
+      border-radius: 15px;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .banner h2 {
+      margin: 0;
+    }
+    .section-title {
+      margin: 20px 0 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 16px;
+    }
+    .match-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .match-info img {
+      height: 40px;
+    }
+    .teams {
+      text-align: center;
+      flex-grow: 1;
+    }
+    .contest-btn {
+      display: block;
+      margin: 10px auto 0;
+      background: #00aaff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+    }
+    .footer i {
+      font-size: 24px;
+    }
+    @media (max-height: 500px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <div class="welcome">Hi Dream User!</div>
+      <div class="subtext">Welcome to Pro 11</div>
+
+      <div class="banner">
+        <h2>IPL 2025</h2>
+        <p>Create your fantasy team now!</p>
+      </div>
+
+      <div class="section-title">Upcoming Matches</div>
+      <div class="card">
+        <div class="match-info">
+          <img src="csk.png" alt="CSK">
+          <div class="teams">
+            CSK vs MI<br>
+            Today, 7:30 PM<br>
+            🏆 ₹10 Crore
+          </div>
+          <img src="mi.png" alt="MI">
+        </div>
+        <button class="contest-btn">Join Contest</button>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="section-title">My Contests</di
