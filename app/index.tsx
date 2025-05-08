@@ -41,33 +41,33 @@ export default function SplashScreen() {
   useEffect(() => {
     logoPosition.value = withTiming(0, {
       duration: 1000,
-      easing: Easing.bezier(0.25, 0.1, 0.25, 1),
+      easing: Easing.bezier(0.25, 0.1, 0.25, 5),
     });
     
     opacity.value = withTiming(1, {
       duration: 800,
-      easing: Easing.bezier(0.25, 0.1, 0.25, 1),
+      easing: Easing.bezier(0.25, 0.1, 0.25, 5),
     });
     
     textOpacity.value = withDelay(
       400,
       withTiming(1, {
         duration: 800,
-        easing: Easing.bezier(0.25, 0.1, 0.25, 1),
+        easing: Easing.bezier(0.25, 0.1, 0.25, 5),
       })
     );
 
     const timer = setTimeout(() => {
       textOpacity.value = withTiming(0, {
         duration: 500,
-        easing: Easing.bezier(0.25, 0.1, 0.25, 1),
+        easing: Easing.bezier(0.25, 0.1, 0.25, 5),
       });
       
       opacity.value = withDelay(
         300,
         withTiming(0, {
           duration: 500,
-          easing: Easing.bezier(0.25, 0.1, 0.25, 1),
+          easing: Easing.bezier(0.25, 0.1, 0.25, 5),
         }, () => {
           runOnJS(navigateToNextScreen)();
         })
@@ -81,7 +81,7 @@ export default function SplashScreen() {
 
   const animatedLogoStyle = useAnimatedStyle(() => {
     return {
-      transform: [{ translateX: logoPosition.value }],
+      transform: [{ translateY: logoPosition.value }],
       opacity: opacity.value,
     };
   });
