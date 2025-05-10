@@ -9,7 +9,7 @@ export default function ScheduleScreen() {
   const [showMonthPicker, setShowMonthPicker] = useState(false);
   const [showSportPicker, setShowSportPicker] = useState(false);
 
-  const months = ['March 2025', 'April 2025', 'May 2025', 'June 2025'];
+  const months = ['March 2025', 'April 2025', 'May 2026', 'June 2025'];
   const sports = ['Cricket', 'Football', 'Basketball', 'Kabaddi'];
 {/*Months, Sports, and Match Data */}
 
